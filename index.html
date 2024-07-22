@@ -7,7 +7,7 @@
   import AnimationLoopTemplate from './src/app.ts';
 
   luma.registerDevices([WebGLDevice, WebGPUDevice]);
-  const device = luma.createDevice({type: "webgpu"});
+  const device = luma.createDevice({type: "webgl"});
   makeAnimationLoop(AnimationLoopTemplate, 
   {device}
   ).start();
